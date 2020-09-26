@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
   subtitle:{
     margin: theme.spacing(2),
-    color:'#ccc',
+    color:'#333',
   },
   section:{
     alignItems:'center',
