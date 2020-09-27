@@ -53,12 +53,13 @@ const Community = props => {
                   A Simple Mission To Close The Computer Science Gap In High Schools And <br/>Local Communities.
                 </Typography>
                 <Grid item xs={12}>
-                    <Button variant="contained" color="primary" size="large" className={classes.homeBtn}>
-                      Sign up
+                    <Button variant="contained" color="secondary" size="large" className={classes.homeBtn}
+                      href="https://forms.gle/1CSaz5JA4zJe2UHu9" target="_blank">
+                      Volunteers 
                     </Button>
-                    <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}>
+                    {/* <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}>
                       Learn more
-                    </Button>
+                    </Button> */}
                 </Grid>
           </Grid>
     </Grid>
