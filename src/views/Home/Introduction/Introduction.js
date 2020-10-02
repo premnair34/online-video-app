@@ -67,7 +67,7 @@ const Introduction = props => {
             <Typography className={classes.title} variant="h4">
                Introducing How Computers Work
             </Typography>
-            <Typography className={classes.subtitle} variant="body">
+            <Typography className={classes.subtitle} variant="body1">
                Computer science is increasingly becoming part of the school curriculum and studies
                have now shown that students who learn coding and computer science
                go on to out perform in reading and writing, math, and science.

@@ -10,8 +10,8 @@ import {
   Paper,
   Typography
 } from '@material-ui/core';
-import exams from './exams.png';
-import student from './student.png';
+import exams from './exams-1.svg';
+import student from './student-1.svg';
 const useStyles = makeStyles(theme => ({
   title:{
     lineHeight:'1.5em',
@@ -39,6 +39,9 @@ const useStyles = makeStyles(theme => ({
     color:'#fff',
     padding: theme.spacing(4),
   },
+  imgWidth:{
+    width:'80%'
+  },
   paperTitle:{
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2)
@@ -64,7 +67,7 @@ const Programs = props => {
         </Grid>
         <Grid container direction="row" justify="space-between" alignItems="center">
             <Grid item lg={5} sm={6} xl={5} xs={12} className={classes.paper}>
-                <img src={exams}  width="200" />
+                <img src={exams} className={classes.imgWidth} />
                 <Typography variant="h5" className={classes.paperTitle}>TEACHERS</Typography>
                 <Typography variant="subtitle1">
                     Students who are interested in bringing CS classes to their school can become
@@ -76,7 +79,7 @@ const Programs = props => {
                 </Button>
             </Grid>
             <Grid item lg={5} sm={6} xl={5} xs={12} className={classes.paper}>
-                <img src={student}  width="200"/>
+                <img src={student} className={classes.imgWidth} />
                 <Typography variant="h5" className={classes.paperTitle}>PROFESSIONALS</Typography>
                 <Typography variant="subtitle1">
                     Volunteers with a strong background in computer science and programming
