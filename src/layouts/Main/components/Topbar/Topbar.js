@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/styles';
 import { AppBar, Toolbar,Hidden, IconButton,Typography } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withRouter } from 'react-router-dom';
+import logo from './freecoding.png';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -39,9 +40,7 @@ const Topbar = props => {
       className={clsx(classes.root, className)}>
       <Toolbar>
         <RouterLink to="/">
-            <Typography className={classes.title} variant="h6" noWrap>
-             Online Class
-             </Typography>
+            <img alt="Logo" width="150" src={logo}  />
         </RouterLink>
       </Toolbar>
     </AppBar>
