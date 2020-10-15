@@ -13,7 +13,7 @@ const Routes = () => {
         component={ HomeView }
         exact
         layout={ Main }
-        path="/"
+        path={["/", "/home"]}
       />
     </Switch>
   );

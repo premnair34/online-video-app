@@ -88,7 +88,7 @@ const Footer = props => {
            <Grid container direction="column" justify="space-evenly" alignItems="center">
                <Typography variant="body1">
                  &copy;{' '}
-                   Copyright Freecoding School. Palamaner. 2020
+                   Copyright Freecoding School. 2020
                </Typography>
                <Typography variant="caption">
                  All rights reserved.

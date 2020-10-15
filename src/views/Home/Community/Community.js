@@ -55,7 +55,7 @@ const Community = props => {
                 <Grid item xs={12}>
                     <Button variant="contained" color="secondary" size="large" className={classes.homeBtn}
                       href="https://forms.gle/1CSaz5JA4zJe2UHu9" target="_blank">
-                      Volunteers 
+                      Learn More 
                     </Button>
                     {/* <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}>
                       Learn more

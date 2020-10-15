@@ -64,7 +64,7 @@ const FreeCoding = props => {
               <Paper className={classes.paper}>
                   <img src={student} className={classes.imgWidth} />
                   <Typography variant="h5" className={classes.paperTitle}>STUDENTS</Typography>
-                  <Typography variant="subtitle1">Become a Freecoding SchoolStudent to learn how to code.</Typography>
+                  <Typography variant="subtitle1">Become a Freecoding School Student to learn how to code.</Typography>
               </Paper>
           </Grid>
           <Grid item lg={4} sm={6} xl={3} xs={12}>

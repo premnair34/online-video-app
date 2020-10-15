@@ -68,13 +68,14 @@ const Programs = props => {
         <Grid container direction="row" justify="space-between" alignItems="center">
             <Grid item lg={5} sm={6} xl={5} xs={12} className={classes.paper}>
                 <img src={exams} className={classes.imgWidth} />
-                <Typography variant="h5" className={classes.paperTitle}>TEACHERS</Typography>
+                <Typography variant="h5" className={classes.paperTitle}>STUDENTS</Typography>
                 <Typography variant="subtitle1">
                     Students who are interested in bringing CS classes to their school can become
                     advocatesto create change by sharing their interest with teachers,
-                     administrators andparents, and introducing them to the Freecoding School.
+                     administrators and parents, and introducing them to the Freecoding School.
                 </Typography>
-                <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}>
+                <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}
+                href="https://forms.gle/1CSaz5JA4zJe2UHu9" target="_blank" >
                   Learn more
                 </Button>
             </Grid>
@@ -86,7 +87,8 @@ const Programs = props => {
                     form the backbone of this program. We welcome both computer science graduate
                     students and Tech professionals, and Academic professionals
                 </Typography>
-                <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}>
+                <Button variant="contained" color="secondary" size="large" className={classes.learnMoreBtn}
+                 href="https://forms.gle/1CSaz5JA4zJe2UHu9" target="_blank">
                   Learn more
                 </Button>
             </Grid>
