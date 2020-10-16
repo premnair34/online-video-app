@@ -14,14 +14,14 @@ const Routes = () => {
         component={ HomeView }
         exact
         layout={ Main }
-        path="/"
+        path={["/", "/home"]}
       />
        <RouteWithLayout
         component={ EventsView }
+        exact
         layout={ Main }
         path="/events"
       />
-      <Redirect from='*' to='/' />
     </Switch>
   );
 };
