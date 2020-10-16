@@ -29,10 +29,6 @@ const Topbar = props => {
   //   localStorage.clear();
   //    history.push('/sign-in');
   // } 
-
-  const goEvents = event => {
-     history.push('/events');
-  } 
   return (
     <AppBar
       className={clsx(classes.root, className)}>
@@ -40,7 +36,7 @@ const Topbar = props => {
         <RouterLink to="/" className={classes.flexGrow}>
             <img alt="Logo" width="150" src={logo}  />
         </RouterLink>
-        <Button to={'/events'} color="primary" onClick={goEvents}>My Events</Button>
+        <Button component={RouterLink} to={'/events'} color="primary">Events</Button>
       </Toolbar>
     </AppBar>
   );
