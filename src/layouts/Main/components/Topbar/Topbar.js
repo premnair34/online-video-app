@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink,withRouter } from 'react-router-dom';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { AppBar, Toolbar,Hidden, IconButton,Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { withRouter } from 'react-router-dom';
+import { AppBar, Toolbar,Hidden, Button,Typography } from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
 import logo from './freecoding.png';
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,19 +28,19 @@ const Topbar = props => {
   // const onLogout = event => {
   //   localStorage.clear();
   //    history.push('/sign-in');
-  // }
-  // <img
-  //   alt="Logo"
-  //   width="80"
-  //   src="/images/logos/usee.png"
-  // />
+  // } 
+
+  const goEvents = event => {
+     history.push('/events');
+  } 
   return (
     <AppBar
       className={clsx(classes.root, className)}>
       <Toolbar>
-        <RouterLink to="/home">
+        <RouterLink to="/" className={classes.flexGrow}>
             <img alt="Logo" width="150" src={logo}  />
         </RouterLink>
+        <Button to={'/events'} color="primary" onClick={goEvents}>My Events</Button>
       </Toolbar>
     </AppBar>
   );

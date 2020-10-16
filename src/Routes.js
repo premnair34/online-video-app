@@ -3,7 +3,8 @@ import { Switch, Redirect } from 'react-router-dom';
 import { RouteWithLayout } from './components';
 import { Main } from './layouts';
 import {
-  Home as HomeView
+  Home as HomeView,
+  Events as EventsView
 } from './views';
 
 const Routes = () => {
@@ -13,12 +14,19 @@ const Routes = () => {
         component={ HomeView }
         exact
         layout={ Main }
-        path={["/", "/home"]}
+        path="/"
       />
+       <RouteWithLayout
+        component={ EventsView }
+        layout={ Main }
+        path="/events"
+      />
+      <Redirect from='*' to='/' />
     </Switch>
   );
 };
 
+      /* <Route path='/404' component={HomeView} /> */
 // <RouteWithProtected
 //   component={ProductListView}
 //   exact
