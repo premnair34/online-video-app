@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Typography, Link,Grid } from '@material-ui/core';
-import {Twitter,Facebook,Pinterest} from '@material-ui/icons';
+import {Twitter,Instagram} from '@material-ui/icons';
 const useStyles = makeStyles(theme => ({
   root: {
     display:'flex'
@@ -25,6 +25,9 @@ const useStyles = makeStyles(theme => ({
   },
   footerLinks:{
     borderBottom:'1px solid #ccc'
+  },
+  footerLinkItem:{
+    color:'#6a859c'
   },
   footerIcon:{
     marginRight:'10px',
@@ -66,19 +69,19 @@ const Footer = props => {
                <Grid container spacing={2}>
                  <Typography variant="subtitle1" className={classes.footerTitle}>SOCIAL</Typography>
                  <Grid item xs={12} className={classes.footerLinks}>
-                    <Link  color="inherit" variant="body1" to="/blog">
+                    <a className={classes.footerLinkItem} href="https://twitter.com/freecodingscho1?s=11" target="_blank">
                       <span className={classes.footerIcon}><Twitter /></span>Twitter
-                    </Link>
+                    </a>
                  </Grid>
-                 <Grid item xs={12} className={classes.footerLinks}>
+                 {/* <Grid item xs={12} className={classes.footerLinks}>
                    <Link  color="inherit" variant="body1" to="/blog">
                       <span className={classes.footerIcon}><Facebook /></span>Facebook
                    </Link>
-                 </Grid>
+                 </Grid> */}
                  <Grid item xs={12} className={classes.footerLinks}>
-                   <Link  color="inherit" variant="body1" to="/blog">
-                      <span className={classes.footerIcon}><Pinterest /></span>Pinterest
-                    </Link>
+                    <a className={classes.footerLinkItem} href="https://www.instagram.com/freecoding_school/?igshid=150l6cbvhr30j" target="_blank">
+                      <span className={classes.footerIcon}><Instagram /></span>Instagram
+                    </a>
                  </Grid>
 
                </Grid>
